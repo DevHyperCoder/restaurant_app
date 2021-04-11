@@ -2,9 +2,9 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>RESTAURANT APP</h1>
+    <div className="">
+      <header>
+        <h1 className="text-blue-800 text-center">RESTAURANT APP</h1>
       </header>
     </div>
   );
