@@ -8,7 +8,9 @@ interface INavigationItem {
 }
 
 export const NavigationItem: React.FunctionComponent<INavigationItem> = (props) => {
+
     const {name, link, exact = false} = props
+
     return (
         <li className="pt-4 border-b-2 border-opacity-0 hover:border-opacity-100 border-primaryorange hover:cursor-pointer">
             <NavLink
@@ -19,5 +21,4 @@ export const NavigationItem: React.FunctionComponent<INavigationItem> = (props) 
             </NavLink>
         </li>
     )
-
 }
