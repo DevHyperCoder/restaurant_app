@@ -1,0 +1,19 @@
+.main-photo {
+    background: url('../img/10882.png');
+    /* height: 370px; */
+}
+/* .center {
+    transform: translateY(-50%);
+} */
+.flex {
+    display: flex; /* tailwind flex class didn't work that's why i created this one */
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.flex-grow-2 {
+    flex-grow: 2;
+}
+.flex-grow-3 {
+    flex-grow: 3;
+}
