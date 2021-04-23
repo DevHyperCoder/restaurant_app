@@ -1,12 +1,11 @@
 .main-photo {
     background: url('../img/10882.png');
-    /* height: 370px; */
 }
-/* .center {
-    transform: translateY(-50%);
-} */
+
+/* sometime tailwind JIT  fail to create some of these classes so i create it to be sure */
+/*wld be deleted in the final build */
 .flex {
-    display: flex; /* tailwind flex class didn't work that's why i created this one */
+    display: flex;
 }
 .flex-grow-1 {
     flex-grow: 1;
@@ -16,4 +15,17 @@
 }
 .flex-grow-3 {
     flex-grow: 3;
+}
+.max-w-57 {
+    max-width: 57rem;
+}
+.food-card-container {
+    --gap: 0.7rem;
+    margin-bottom: var(--gap);
+}
+.food-card {
+    margin-left: var(--gap);
+}
+.food-card:first-child {
+    margin-left: 0;
 }
