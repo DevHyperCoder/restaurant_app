@@ -12,6 +12,9 @@ import FoodCard from './foodCard';
 import PakistaniFood from '../../img/Image 33@2x.png';
 import Risotto from '../../img/Image 34.png';
 import Maslenitca from '../../img/Image 35.png';
+import Moussaka from '../../img/Image 36.png';
+import Capachino from '../../img/Image 37.png';
+import Arabic_Mandi from '../../img/Image 38.png';
 
 function landingPage() {
     return (
@@ -64,6 +67,7 @@ function landingPage() {
                     tag1='Indian'
                     tag2='Pakistani'
                     typeOfFood='dinner'
+                    rateText='32'
                 />
                 <FoodCard
                     text='Risotto'
@@ -72,6 +76,7 @@ function landingPage() {
                     tag1='Italian'
                     tag2='Eurpeon'
                     typeOfFood='dinner'
+                    rateText='20'
                 />
                 <FoodCard
                     text='Maslenitca'
@@ -80,7 +85,47 @@ function landingPage() {
                     tag1='Russian'
                     tag2='sweeden'
                     typeOfFood='desert'
+                    rateText='45'
                 />
+            </section>
+            <section>
+                <div className='flex food-card-container'>
+                    <h2 className='uppercase text-primaryred font-semibold font text-2xl flex-grow-0'>
+                        popular
+                    </h2>
+                    <div className='flex-grow-5 relative'>
+                        <hr className='border border-gray-300 w-full top-1/2 transform: translate(0, -50%) absolute ' />
+                    </div>
+                </div>
+                <section className='flex flex-wrap food-card-container mb-4'>
+                    <FoodCard
+                        text='Moussaka'
+                        img={Moussaka}
+                        rate={4}
+                        tag1='Italian'
+                        tag2='Eurpeon'
+                        typeOfFood='dinner'
+                        rateText='72'
+                    />
+                    <FoodCard
+                        text='Capachino'
+                        img={Capachino}
+                        rate={2}
+                        tag1='Russian'
+                        tag2='sweeden'
+                        typeOfFood='desert'
+                        rateText='34'
+                    />
+                    <FoodCard
+                        text='Arabic Mandi '
+                        img={Arabic_Mandi}
+                        rate={5}
+                        tag1='Indian'
+                        tag2='Pakistani'
+                        typeOfFood='dinner'
+                        rateText='55'
+                    />
+                </section>
             </section>
         </div>
     );

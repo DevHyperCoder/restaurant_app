@@ -26,6 +26,11 @@ module.exports = {
             width: {
                 82.5: '20.625rem',
             },
+            flexGrow: {
+                3: 3,
+                4: 4,
+                5: 5,
+            },
         },
     },
     variants: {

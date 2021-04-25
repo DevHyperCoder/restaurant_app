@@ -7,6 +7,7 @@ import RatingStars from './fillStarComp';
 import EmptyStar from './emptyStar';
 import Tags from './tags';
 import desert2 from '../../img/desert2.svg';
+import drink from '../../img/whiteCup.svg';
 interface Props {
     img: string;
     text: string;
@@ -14,6 +15,7 @@ interface Props {
     tag1: string;
     tag2: any;
     typeOfFood: string;
+    rateText: string;
 }
 function renderRating(ratingNum: Number) {
     let component = [];
@@ -26,12 +28,29 @@ function renderRating(ratingNum: Number) {
     return component;
 }
 function desertOr(foodType: string) {
-    if (foodType == 'dinner') {
+    if (foodType === 'dinner') {
         return (
             <img
                 className='text-white bg-primaryred p-3 rounded-full absolute bottom-2 left-4 cursor-pointer'
                 src={cardIcon}
                 alt='dinner icon'
+            />
+        );
+        // }else if(foodType="drink"){
+        //     return (
+        //         <img
+        //             className='text-white bg-primaryred p-3 rounded-full absolute bottom-2 left-4 cursor-pointer'
+        //             src={drink}
+        //             alt='desert icon'
+        //         />
+        //     );
+        // }
+    } else if ((foodType = 'drink')) {
+        return (
+            <img
+                className='text-white bg-primaryred p-3 rounded-full absolute bottom-2 left-4 cursor-pointer'
+                src={drink}
+                alt='desert icon'
             />
         );
     } else {
@@ -68,7 +87,7 @@ function FoodCard(props: Props) {
                     <div>
                         {renderRating(props.rate)}
                         <p className='inline-block ml-3 text-primarygray font-semibold'>
-                            32 Reviews
+                            {props.rateText + ' Reviews'}
                         </p>
                     </div>
                     <Tags text={props.tag1} />
